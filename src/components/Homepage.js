@@ -42,10 +42,26 @@ class Homepage extends Component {
                 <br />
                 <div className="row">
                     <span className="col-3 h4">Contact: </span>
-                    <span className="col-3 text-left"><strong>mobile#:</strong> +639971699023 <br />
+                    <span className="col-3 text-left"><strong>Mobile#:</strong> +639971699023 <br />
                     <strong>Tel #:</strong> +029830799 <br />
-                    <strong>email:</strong> jaypeetan.bsit@gmail.com</span>
+                    <strong>E-mail:</strong> jaypeetan.bsit@gmail.com</span>
                 </div>
+                <hr></hr>
+                <div className="row">
+                    <span className="col-3 h4">Educational Background:</span>
+                    <span className="col-7 text-left"><strong>Tertianary: </strong>AMA Computer College Fairview Campus (2014-2017)<img width="200px" src="http://www.ama.edu.ph/wp-content/uploads/2017/05/amau_logo_basic2a.png" /></span>
+                    <span className="col-2 text-left">Bachelor of Science in Information Technology</span>
+                </div>
+                <div className="row">
+                    <span className="col-3"></span>
+                    <span className="col-9 text-left"><strong>Secondary: </strong>Cielito Zamora High-School Annex II (2011-2014)</span>
+                </div>
+                <br></br>
+                <div className="row">
+                    <span className="col-3"></span>
+                    <span className="col-9 text-left"><strong>Primary: </strong>Cielito Zamora Memorial Elementary School (2006-2011)</span>
+                </div>
+                <hr />
             </div>
         )
     }
