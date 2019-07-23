@@ -2,7 +2,7 @@
   "name": "myportfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jaypeetancero.github.io/portfolio/",
+  "homepage": "https://jaypeetancero.github.io/portfolio",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "gh-pages": "^2.0.1",
