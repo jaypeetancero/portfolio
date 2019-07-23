@@ -18,6 +18,16 @@
     height: 100px;
     width: 100px;
   }
+
+  .animate-sidebar {
+      transition: 5s;
+  }
+
+  .hoverEffect1:hover {
+    border-radius: 10px;
+    transition-duration: 1000ms;
+    background-color: dimgray;
+  }
   
   @keyframes App-logo-spin {
     from {
@@ -27,4 +37,3 @@
       transform: rotate(360deg);
     }
   }
-  

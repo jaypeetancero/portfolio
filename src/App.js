@@ -1,16 +1,27 @@
 import React from 'react';
 import './App.css';
-import Sidebar from './components/layout/Sidebar';
-import Homepage from './components/Homepage'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import SidebarComponents from './components/layout/SidebarComponent';
+import Homepage from './components/Homepage';
+import BasicPortfolio from './components/BasicPortfolio';
 import Footer from './components/layout/Footer';
 
+const routes = [{
+  path: '/basicPortfolio',
+  component: BasicPortfolio
+}, {
+  path: '/homePage',
+  component: Homepage
+}]
+
 function App() {
+  const routeComponents = routes.map(({ path, component }, key) => <Route exact path={path} component={component} key={key} />);
   return (
-    <div className="App">
-      <Sidebar></Sidebar>
-      <Homepage></Homepage>
-      <Footer></Footer>
-    </div>
+    <Router>
+      <SidebarComponents />
+      <Switch>{routeComponents}</Switch>
+      <Footer />
+    </Router>
   );
 }
 
