@@ -1,27 +1,25 @@
 import React from 'react';
+import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import SidebarComponents from './components/layout/SidebarComponent';
-import Homepage from './components/Homepage';
-import BasicPortfolio from './components/BasicPortfolio';
-import Footer from './components/layout/Footer';
-
-const routes = [{
-  path: '/basicPortfolio',
-  component: BasicPortfolio
-}, {
-  path: '/homePage',
-  component: Homepage
-}]
 
 function App() {
-  const routeComponents = routes.map(({ path, component }, key) => <Route exact path={path} component={component} key={key} />);
   return (
-    <Router>
-      <SidebarComponents />
-      <Switch>{routeComponents}</Switch>
-      <Footer />
-    </Router>
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
   );
 }
 
